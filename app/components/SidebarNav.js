@@ -1,39 +1,19 @@
 var React = require('react');
-var PropTypes = React.PropTypes;
+var Folder = require('./Folder');
 
+var PropTypes = React.PropTypes;
 var SidebarNav = React.createClass({
 
 	render: function () {
 		return (
 			<div id="sidebar-wrapper">
-				<ul className="sidebar-nav">
-					<li className="sidebar-brand">
-						<a href="#">
-							Start Bootstrap
-						</a>
-					</li>
-					<li>
-						<a href="#">Dashboard</a>
-					</li>
-					<li>
-						<a href="#">Shortcuts</a>
-					</li>
-					<li>
-						<a href="#">Overview</a>
-					</li>
-					<li>
-						<a href="#">Events</a>
-					</li>
-					<li>
-						<a href="#">About</a>
-					</li>
-					<li>
-						<a href="#">Services</a>
-					</li>
-					<li>
-						<a href="#">Contact</a>
-					</li>
-				</ul>
+        <ul className="sidebar-nav">
+          <li>
+            Folders
+              <Folder name='About' />
+              <Folder name='Projects' />
+          </li>
+        </ul>
 			</div>
 		);
 	}
@@ -41,29 +21,18 @@ var SidebarNav = React.createClass({
 });
 
 styles = {
-	sideBarWrapper: {
-		background: 'whiteSmoke',
-		'zIndex': 1000,
-		position: 'fixed',
-		left: '250px',
-		width: 0,
-		height: '100%',
-		'marginLeft': '-250px',
-		'overflowY': 'auto',
-		background: '#000',
-		'WebkitTransition': 'all 0.5s ease',
-		'MozTransition': 'all 0.5s ease',
-		'OTransition': 'all 0.5s ease',
-		'transition': 'all 0.5s ease'
-	},
-	sideBarNav: {
-		position: 'absolute',
-		top: 0,
-		width: '250px',
-		margin: 0,
-		padding: 0,
-		'listStyle': 'none'
-	}
+  header: {
+    fontWeight: 800,
+    color: '#40E0D0'
+  },
+  fileItem: {
+    // textDecoration: 'none',
+    listStyleType: 'none',
+    display: 'block'
+  },
+  fileImg: {
+    listStyleImage: "url('https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_folder_open_black_24px.svg')"
+  }
 }
 
 module.exports = SidebarNav;
