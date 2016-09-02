@@ -1,19 +1,14 @@
 var React = require('react');
-var Folder = require('./Folder');
-
+var FolderContainer = require('../containers/FolderContainer');
 var PropTypes = React.PropTypes;
-var SidebarNav = React.createClass({
 
+var SidebarNav = React.createClass({
 	render: function () {
 		return (
 			<div id="sidebar-wrapper">
-        <ul className="sidebar-nav">
-          <li>
-            Folders
-              <Folder name='About' />
-              <Folder name='Projects' />
-          </li>
-        </ul>
+        <FolderContainer className="sidebar-nav">
+
+        </FolderContainer>
 			</div>
 		);
 	}
@@ -22,7 +17,7 @@ var SidebarNav = React.createClass({
 
 styles = {
   header: {
-    fontWeight: 800,
+    // fontWeight: 600,
     color: '#40E0D0'
   },
   fileItem: {
