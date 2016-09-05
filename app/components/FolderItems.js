@@ -21,8 +21,8 @@ function FolderItems (props) {
 var styles = {
 	item: {
 		color: '#C0C0C0',
-		listStyleImage: "url('/assets/img/text_resume.png')",
-		margin: '5%'
+		listStyleImage: "url('/assets/img/text_resume.png')"
+
 	}
 }
 

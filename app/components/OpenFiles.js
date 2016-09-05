@@ -5,9 +5,7 @@ var OpenFiles = React.createClass({
 
   render: function() {
     return (
-      <ul>
-
-      </ul>
+      <div />
     );
   }
 
