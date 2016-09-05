@@ -25,7 +25,9 @@ var FolderList = React.createClass({
 var styles = {
   folder: {
     color: '#40E0D0',
-    listStyleImage: "url('/assets/img/closed_folder.png')"
+    listStyleImage: "url('/assets/img/closed_folder.png')",
+    fontSize: '.8em',
+    margin: '5%'
   }
 }
 
