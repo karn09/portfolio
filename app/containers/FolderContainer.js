@@ -17,8 +17,8 @@ var FolderContainer = React.createClass({
   getInitialState: function () {
       return {
         folders: [
-          'About',
-          'Projects',
+          {name: 'About', contents: ['Me', 'Contact']},
+          {name: 'Projects', contents: ['News', 'Map']},
         ]
       }
   },

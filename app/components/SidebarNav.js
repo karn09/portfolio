@@ -16,10 +16,6 @@ var SidebarNav = React.createClass({
 });
 
 styles = {
-  header: {
-    // fontWeight: 600,
-    color: '#40E0D0'
-  },
   fileItem: {
     // textDecoration: 'none',
     listStyleType: 'none',
