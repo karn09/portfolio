@@ -2,6 +2,7 @@ var React = require('react');
 var PropTypes = React.PropTypes;
 var TabsBar = require('./TabsBar');
 var SidebarNav = require('./SidebarNav');
+require('../styles/sidebar.css');
 require('../styles/sidebar/css/bootstrap.css');
 require('../styles/flat-ui/css/flat-ui.css');
 require('../styles/sidebar/css/simple-sidebar.css');

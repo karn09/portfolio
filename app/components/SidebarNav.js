@@ -1,14 +1,17 @@
 var React = require('react');
 var FolderContainer = require('../containers/FolderContainer');
+var OpenFilesContainer = require('../containers/OpenFilesContainer');
 var PropTypes = React.PropTypes;
 
 var SidebarNav = React.createClass({
 	render: function () {
 		return (
 			<div id="sidebar-wrapper">
-        <FolderContainer className="sidebar-nav">
-
-        </FolderContainer>
+				<p style={styles.header}>Open Files</p>
+				<OpenFilesContainer />
+				<hr />
+				<p style={styles.header}>Folder</p>
+        <FolderContainer />
 			</div>
 		);
 	}
@@ -16,14 +19,9 @@ var SidebarNav = React.createClass({
 });
 
 styles = {
-  fileItem: {
-    // textDecoration: 'none',
-    listStyleType: 'none',
-    display: 'block'
-  },
-  fileImg: {
-    listStyleImage: "url('https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_folder_open_black_24px.svg')"
-  }
+	header: {
+		padding: '10px'
+	}
 }
 
 module.exports = SidebarNav;
